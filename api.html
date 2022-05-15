@@ -45,7 +45,42 @@
             </div>         
         </nav>
 
-            <footer class="py-5 bg-dark text-white text-center" style="margin-top: 75px;">
+
+         <!--  <div class="container" style="margin-top: 100px;">
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text"
+                        class="form-control" name="" id="euro" placeholder="Euro">
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="col-md-5" style="margin-top: 35px;">
+                        <input type="text"
+                        class="form-control" name="" id="tl" placeholder="Türk lirası" readonly>
+                    </div>
+                    <div class="col-md-2">
+                        <button type="button" id='exchange' class="btn btn-success">Çevir</button>
+                    </div>
+                </div>
+            </div>-->
+            <div class="container mt-5">
+                <div class="app">
+                  <div class="header">
+                    <h1>Hava Durumu</h1>
+                  </div>
+                  <input type="text" id="searchBar" placeholder="Şehir Giriniz.." />
+          
+                  <div class="content">
+                    <div class="city">Istanbul,TR</div>
+                    <div class="sicaklik">15°C</div>
+                    <div class="aciklama">Gunesli</div>
+                    <div class="minmax">14°C / 19°C</div>
+                  </div>
+                </div>
+              </div>
+
+            <footer class="py-5 bg-dark text-white text-center" style="margin-top: 380px;">
                 YİĞİT AĞAR © 2022
               </footer>
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -53,6 +88,7 @@
             <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
                 
                 <script src="assets/js/wow.min.js"></script>
+                <script src="api.js" charset="utf-8"></script>
               <script>
                new WOW().init();
              </script>
@@ -66,7 +102,7 @@
                ga('send', 'pageview');
         
              </script>
-                
+             <script src="app.js"></script>   
                 
                 
                 </body>

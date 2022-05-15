@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="assets\css/bootstrap-grid.css">
         <link rel="stylesheet" href="assets\animate.css">
         <link rel="stylesheet" href="assets/css/wowanimate.css">
-        <title>AĞAR</title>
+        <title>İletişim</title>
     </head>
     
     <body>
@@ -43,37 +43,101 @@
           
        </nav>
         <!-- resim-form elemanlar -->
-<div class="container mt-5">
-    <div class="text-justify">
-        <div class="row wow rotateInDownLeft">
-            <div class="col align-self-start">
-           <img style="text-align: center;" src="assets/iletişim.jpg" alt="resim">
-            </div>
-        </div>
-        <div class="row wow rotateInDownRight">
-            <div class="col" style="margin-top: 25px;margin-left: 100px;"style>
-                <h3>İletişim Bilgileri:</h3><br>
-                <input type="text" name="ad" placeholder="Adınız" size="100px"><br><br>
-                <input type="text" name="soyad" placeholder="Soyadınız" size="100px"><br><br>
-                <input type="text"  name="e-posta" placeholder="Email adresi"  size="100px"><br><br>
-                <input type="text" name="adres" placeholder="Adresiniz" size="100px"><br><br>
-                <h6>Cinsiyetiniz:</h6>
-                <input type="radio" name="cinsiyet" id="cinsiyet1"><label for="cinsiyet1">Erkek</label>
-                <input type="radio" name="cinsiyet" id="cinsiyet2"><label for="cinsiyet2">Kadın</label><br><br>
-                <textarea name="yazialani" cols="100" rows="10" placeholder="İletmek istediğiniz mesaj"></textarea><br><br>
-                <button type="submit" name="gonder">Gönder</button>&nbsp;&nbsp;
-                <button type="submit" name="temizle">Temizle</button>
-
-
-            </div>
-        </div>
-</div>
-</div>
-
+        <div class="container mt-5 mb-4">
+            <div class="row">
+                <div class="col text-center">
+                  <img src="assets/iletisim.jpg" alt="resim" height="200px"  width="800px"/>
+                </div>
+              </div>
+            <form
+              name="form"
+              action="php/index.php"
+              onsubmit="return validateForm()"
+              method="post"
+            >
+              <div class="row mt-3">
+                <div class="form-group">
+                  <label for="formGroupExampleInput"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Adınız"
+                    name="AD"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <label for="formGroupExampleInput"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Soyadınız"
+                    name="SOYAD"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <label for="formGroupExampleInput"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Telefon Numaranız"
+                    name="TEL"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <label for="formGroupExampleInput"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Mail Adresiniz"
+                    name="MAİL"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <label for="formGroupExampleInput"></label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="formGroupExampleInput"
+                    placeholder="Adresiniz"
+                    name="ADRES"
+                  />
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1"></label>
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="5"
+                    placeholder="Eklemek İstedikleriniz"
+                    name="MESAJ"
+                  ></textarea>
+                </div>
+              </div>
+              <div style="margin-top: 15px; text-align: center">
+                <button type="reset" class="btn btn-primary">Temizle</button>
+                <button type="submit" class="btn btn-primary">Gönder</button>
+              </div>
+            </form>
+          </div>
 <footer class="py-5 bg-dark text-white text-center" style="margin-top: 75px;">
     YİĞİT AĞAR © 2022
   </footer>
-
+        
+        <script src="assets/js/validation.js"></script>
         <script src="assets/js/wow.min.js"></script>
       <script>
        new WOW().init();
